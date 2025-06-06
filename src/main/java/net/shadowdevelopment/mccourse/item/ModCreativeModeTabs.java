@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.shadowdevelopment.mccourse.MCCourseMod;
+import net.shadowdevelopment.mccourse.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -23,10 +24,13 @@ public class ModCreativeModeTabs {
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AZURITE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("azurite_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RAW_AZURITE.get())).withTabsBefore(AZURITE_ITEMS_TAB.getId())
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.AZURITE_BLOCK.get())).withTabsBefore(AZURITE_ITEMS_TAB.getId())
                     .title(Component.translatable("creativetab.azurite_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(Blocks.HAY_BLOCK);
+                        output.accept(ModBlocks.AZURITE_BLOCK.get());
+
+                        output.accept(ModBlocks.AZURITE_ORE.get());
+                        output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

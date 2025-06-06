@@ -2,6 +2,12 @@
   "item.mccourse.azurite": "Azurite",
   "item.mccourse.raw_azurite": "Raw Azurite",
 
+
+  "block.mccourse.azurite_block": "Block of Azurite",
+  "block.mccourse.azurite_ore": "Azurite Ore",
+  "block.mccourse.azurite_deepslate_ore": "Deepslate Azurite Ore",
+
+
   "creativetab.azurite_items": "Azurite Items",
   "creativetab.azurite_blocks": "Azurite Blocks"
 }

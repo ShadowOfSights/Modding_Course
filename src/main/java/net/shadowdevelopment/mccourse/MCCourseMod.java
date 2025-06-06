@@ -14,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.shadowdevelopment.mccourse.block.ModBlocks;
 import net.shadowdevelopment.mccourse.item.ModCreativeModeTabs;
 import net.shadowdevelopment.mccourse.item.ModItems;
 import org.slf4j.Logger;
@@ -37,6 +38,8 @@ public class MCCourseMod {
 
         //Register the new Items added in ModItems
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
