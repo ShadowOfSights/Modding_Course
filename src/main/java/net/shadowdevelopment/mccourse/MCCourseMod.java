@@ -56,10 +56,10 @@ public class MCCourseMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         //adds to ingeredients tab
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.AZURITE);
-            event.accept(ModItems.RAW_AZURITE);
-        }
+//        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+//            event.accept(ModItems.AZURITE);
+//            event.accept(ModItems.RAW_AZURITE);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -31,6 +31,9 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.AZURITE_ORE.get());
                         output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE.get());
+
+                        output.accept(ModBlocks.AZURITE_NETHER_ORE.get());
+                        output.accept(ModBlocks.AZURITE_END_ORE.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {
